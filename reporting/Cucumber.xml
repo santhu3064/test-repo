@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.147">
+    <testcase classname="Forgot password flow" name="Check if the user can change password successfully through forgot password flow" time="19.018">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name='password']&quot;}&#10;  (Session info: chrome=129.0.6668.70)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.16.1', revision: '9b4c83354e'&#10;System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '21.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fe27a2f96c1f1bd3770d92dc47e96fd7, findElement {using=name, value=password}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: /var/folders/8l/z3svzly94pd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65205}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:65205/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fe27a2f96c1f1bd3770d92dc47e96fd7" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user launches the InstaBee portal on browser..........................passed
+And user lands on login page by clicking the login button...................passed
+And user clicks forgot password link........................................passed
+And user lands on forgot password rest email sending page...................passed
+And user enters emails and hit submit.......................................passed
+And password reset email sent successfully..................................passed
+And user lands on password reset page by following link in email............passed
+And user enters email, password and confirm password on password reset page.passed
+And user clicks reset password button.......................................passed
+Then player lands on login page and password reset successfully message is shown.passed
+And user enters email on the login page.....................................passed
+And user enters new password on the login page..............................failed
+And user clicks submit login button on the login page.......................skipped
+Then user should land on home page successfully.............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='password']"}
+  (Session info: chrome=129.0.6668.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe27a2f96c1f1bd3770d92dc47e96fd7, findElement {using=name, value=password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: /var/folders/8l/z3svzly94pd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65205}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:65205/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe27a2f96c1f1bd3770d92dc47e96fd7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.sendKeys(Unknown Source)
+	at pages.loginPage.enterNewPasswordOnLoginpage(loginPage.java:101)
+	at stepDefinitions.Website.loginSteps.user_enters_new_password_on_the_login_page(loginSteps.java:42)
+	at ✽.user enters new password on the login page(file:///Users/raj/IdeaProjects/InstaBeeTestAutomation/src/test/java/features/Website/H_forgotPassword.feature:16)
+]]></failure>
+    </testcase>
+</testsuite>
