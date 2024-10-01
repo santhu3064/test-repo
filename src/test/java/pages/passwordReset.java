@@ -41,6 +41,12 @@ public class passwordReset {
     @FindBy(xpath = "//button[contains(text(),'Email Password Reset')]")
     WebElement passwordRestEmailSentConfirmationMessage;
 
+    @FindBy(xpath = "//button[contains(text(),'Reset Password')]")
+    WebElement resetPasswordButton;
+
+    @FindBy(xpath = "//div[contains(text(),'Your password has been')]")
+    WebElement passwordRestConfirmationMessageOnLoginPage;
+
 
     public void openProfilePage() {
         WebDriverHelper.waitUntilVisible(profilePageButton, 15, 5);
@@ -85,12 +91,17 @@ public class passwordReset {
     }
 
     public void enterDetailsOnPasswordResetPage() {
-
+        WebDriverHelper.waitUntilVisible(email, 15, 3);
+        newPasswordField.sendKeys("NewPassword");
+        confirmPasswordField.sendKeys("NewPassword");
     }
 
     public void clickRestPasswordButton() {
+        WebDriverHelper.waitUntilClickable(resetPasswordButton, 15, 3);
+        resetPasswordButton.click();
     }
 
     public void checkPlayerLandsOnLoginPageWithPasswordResetMessage() {
+        WebDriverHelper.waitUntilVisible(passwordRestConfirmationMessageOnLoginPage, 15, 3);
     }
 }

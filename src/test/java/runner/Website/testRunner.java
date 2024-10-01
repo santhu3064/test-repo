@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
                 "resources",
                 "stepDefinitions","pages"},
 
-        tags = "@ForgotPassword",
+        tags = "@Registration or @ForgotPassword",
         monochrome = false,
         dryRun = false
 )
