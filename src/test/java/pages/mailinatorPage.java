@@ -36,6 +36,9 @@ public class mailinatorPage {
     @FindBy(xpath = "//p[contains(text(),'verification code')]")
     WebElement verificationCodeExtract;
 
+    @FindBy(xpath = "//a[contains(@href,'reset-password')]")
+    WebElement resetPasswordButton;
+
     public void getTheOTPfromEmailForRegistration() throws InterruptedException {
         getTheOTPfromEmail(objRegistrationPage.emailAddress);
     }
@@ -64,6 +67,24 @@ public class mailinatorPage {
     }
 
 
-    public void checkPlayerLandsOnPasswordResetPageFromEmail() {
+    public void checkPlayerLandsOnPasswordResetPageFromEmail() throws InterruptedException {
+        driver.switchTo().newWindow(WindowType.TAB);
+        ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+        driver.get(yopMail_url);
+        WebDriverHelper.waitUntilPageCompletelyLoad();
+        if (driver.findElements(By.xpath("//p[contains(@class, 'fc-button-label') and text() = 'Consent']")).size()>0){
+            giveConsentToCookiePopup.click();
+        }
+        Thread.sleep(3000);
+        WebDriverHelper.waitUntilVisible(emailSearch, 30, 5);
+        emailSearch.sendKeys(NewRegisterUserEmail);
+        emailSearchSubmit.click();
+        WebDriverHelper.waitUntilVisible(mailIframe, 30, 5);
+        driver.switchTo().frame(mailIframe);
+        WebDriverHelper.waitUntilClickable(resetPasswordButton, 15, 3);
+        resetPasswordButton.click();
+        ArrayList<String> tabs1 = new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(tabs1.get(2));
     }
 }

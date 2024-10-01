@@ -25,7 +25,7 @@ public class mailinatorSteps {
     }
 
     @And("user lands on password reset page by following link in email")
-    public void user_lands_on_password_reset_page_by_following_link_in_email() {
+    public void user_lands_on_password_reset_page_by_following_link_in_email() throws InterruptedException {
    objMailinatorPage.checkPlayerLandsOnPasswordResetPageFromEmail();
     }
 
