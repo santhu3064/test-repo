@@ -1,6 +1,6 @@
 Feature: Validate user profile page and update personal details
 
-  @UserProfile
+  @Portal @UserProfile
   Scenario Outline: Check if all the sections on profile page are loaded and user can update personla info
     Given user launches the InstaBee portal on browser
     And user lands on login page by clicking the login button
@@ -20,7 +20,7 @@ Feature: Validate user profile page and update personal details
     And user clicks logout link
     And user lands on login page by clicking the login button
     And user enters the updated email on the login page
-    And user enters new password on the login page
+    And user enters password on the login page
     And user clicks submit login button on the login page
     Then user should land on home page successfully
 
