@@ -1,7 +1,102 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.147">
-    <testcase classname="Forgot password flow" name="Check if the user can change password successfully through forgot password flow" time="19.018">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name='password']&quot;}&#10;  (Session info: chrome=129.0.6668.70)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.16.1', revision: '9b4c83354e'&#10;System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '21.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fe27a2f96c1f1bd3770d92dc47e96fd7, findElement {using=name, value=password}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: /var/folders/8l/z3svzly94pd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65205}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:65205/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fe27a2f96c1f1bd3770d92dc47e96fd7" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user launches the InstaBee portal on browser..........................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="292.832">
+    <testcase classname="Registration flow" name="Check if the user can register successfully through email OTP authentication" time="35.374">
+        <system-out><![CDATA[Given user launches the InstaBee portal on browser..........................passed
+And user lands on registration page by clicking the try InstaBee free button.passed
+And user enters the name....................................................passed
+And user enters the email...................................................passed
+And user enters the mobile..................................................passed
+And user enters the password................................................passed
+And user enters the confirm password........................................passed
+And user hit submit registration button.....................................passed
+And user lands on the 2FA page..............................................passed
+And user gets OTP from the email for registration...........................passed
+And user enters the OTP and hit submit......................................passed
+Then user should land on home page successfully.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Email login flow" name="Check if the user can login using the email &amp; password successfully" time="18.848">
+        <system-out><![CDATA[Given user launches the InstaBee portal on browser..........................passed
+And user lands on login page by clicking the login button...................passed
+And user enters email on the login page.....................................passed
+And user enters password on the login page..................................passed
+And user clicks submit login button on the login page.......................passed
+Then user should land on home page successfully.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Social media login flow" name="Check if the user can login using the gmail email &amp; password successfully" time="25.346">
+        <system-out><![CDATA[Given user launches the InstaBee portal on browser..........................passed
+And user lands on login page by clicking the login button...................passed
+And user clicks the gmail login button......................................passed
+And user enters the gmail email and hit next................................passed
+And user enters the gmail password..........................................passed
+And user hit submit.........................................................passed
+Then user should land on home page successfully.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Mobile OTP login" name="Check if the user can login using mobile OTP" time="36.378">
+        <system-out><![CDATA[Given user launches the InstaBee portal on browser..........................passed
+And user lands on login page by clicking the login button...................passed
+And user clicks the login with OTP button...................................passed
+And user enters the valid phone number registered with the player and hit verify.passed
+And user gets OTP from the email for login..................................passed
+And user enters the OTP and hit submit......................................passed
+Then user should land on home page successfully.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Logout flow" name="Check if the user can successfully" time="21.401">
+        <system-out><![CDATA[Given user launches the InstaBee portal on browser..........................passed
+And user lands on login page by clicking the login button...................passed
+And user enters email on the login page.....................................passed
+And user enters password on the login page..................................passed
+And user clicks submit login button on the login page.......................passed
+And user should land on home page successfully..............................passed
+And user clicks the options menu............................................passed
+And user clicks sign out button.............................................passed
+Then user gets logged out successfully......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="2FA login flow" name="Check if the user can use 2FA login feature by toggle ON from profile page. Also can disable the same from profile page" time="33.889">
+        <system-out><![CDATA[Given user launches the InstaBee portal on browser..........................passed
+And user lands on login page by clicking the login button...................passed
+And user enters email on the login page.....................................passed
+And user enters password on the login page..................................passed
+And user clicks submit login button on the login page.......................passed
+Then user should land on home page successfully.............................passed
+And user clicks the options menu............................................passed
+And user opens the profile page.............................................passed
+And user click enable 2FA button............................................passed
+And user enter password to confirm 2FA popup................................passed
+And user hit submit button to confirm 2FA popup.............................passed
+Then user is show with QA code, field to enter the auth code and confirm button.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate user profile page and update personal details" name="Check if all the sections on profile page are loaded and user can update personla info" time="45.251">
+        <system-out><![CDATA[Given user launches the InstaBee portal on browser..........................passed
+And user lands on login page by clicking the login button...................passed
+And user enters email on the login page.....................................passed
+And user enters password on the login page..................................passed
+And user clicks submit login button on the login page.......................passed
+And user should land on home page successfully..............................passed
+And user clicks the options menu............................................passed
+And user opens the profile page.............................................passed
+Then profile info section is present on profile page........................passed
+And update password section is present on profile page......................passed
+And 2FA section is present on profile page..................................passed
+And broswer sessions section is present on profile page.....................passed
+And delete account section is present on profile page.......................passed
+And user updates profile information on profile info section................passed
+And user clicks the options menu............................................passed
+And user clicks logout link.................................................passed
+And user lands on login page by clicking the login button...................passed
+And user enters the updated email on the login page.........................passed
+And user enters password on the login page..................................passed
+And user clicks submit login button on the login page.......................passed
+Then user should land on home page successfully.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Forgot password flow" name="Check if the user can change password successfully through forgot password flow" time="38.404">
+        <system-out><![CDATA[Given user launches the InstaBee portal on browser..........................passed
 And user lands on login page by clicking the login button...................passed
 And user clicks forgot password link........................................passed
 And user lands on forgot password rest email sending page...................passed
@@ -12,40 +107,31 @@ And user enters email, password and confirm password on password reset page.pass
 And user clicks reset password button.......................................passed
 Then player lands on login page and password reset successfully message is shown.passed
 And user enters email on the login page.....................................passed
-And user enters new password on the login page..............................failed
-And user clicks submit login button on the login page.......................skipped
-Then user should land on home page successfully.............................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='password']"}
-  (Session info: chrome=129.0.6668.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fe27a2f96c1f1bd3770d92dc47e96fd7, findElement {using=name, value=password}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: /var/folders/8l/z3svzly94pd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65205}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:65205/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fe27a2f96c1f1bd3770d92dc47e96fd7
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.sendKeys(Unknown Source)
-	at pages.loginPage.enterNewPasswordOnLoginpage(loginPage.java:101)
-	at stepDefinitions.Website.loginSteps.user_enters_new_password_on_the_login_page(loginSteps.java:42)
-	at ✽.user enters new password on the login page(file:///Users/raj/IdeaProjects/InstaBeeTestAutomation/src/test/java/features/Website/H_forgotPassword.feature:16)
-]]></failure>
+And user enters new password on the login page..............................passed
+And user clicks submit login button on the login page.......................passed
+Then user should land on home page successfully.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Change password from profile page" name="Check if the user can change password from profile page and re-login with new password" time="37.839">
+        <system-out><![CDATA[Given user launches the InstaBee portal on browser..........................passed
+And user lands on login page by clicking the login button...................passed
+And user enters email on the login page.....................................passed
+And user enters new password on the login page..............................passed
+And user clicks submit login button on the login page.......................passed
+And user should land on home page successfully..............................passed
+And user clicks the options menu............................................passed
+And user opens the profile page.............................................passed
+And user enters the current password on update password section.............passed
+And user enters the new password on update password section.................passed
+And user enters the confirm password on the update password section.........passed
+And user hits save button...................................................passed
+And user clicks the options menu............................................passed
+And user clicks logout link.................................................passed
+And user lands on login page by clicking the login button...................passed
+And user enters email on the login page.....................................passed
+And user enters password on the login page..................................passed
+And user clicks submit login button on the login page.......................passed
+Then user should land on home page successfully.............................passed
+]]></system-out>
     </testcase>
 </testsuite>
