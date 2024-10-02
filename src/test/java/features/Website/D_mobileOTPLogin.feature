@@ -1,6 +1,6 @@
 Feature: Mobile OTP login
 
- @Portal @OTPLogin
+  @Portal @OTPLogin
   Scenario Outline: Check if the user can login using mobile OTP
     Given user launches the InstaBee portal on browser
     And user lands on login page by clicking the login button

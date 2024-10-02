@@ -55,15 +55,15 @@ public class passwordReset {
 
     public void enterCurrentPassword() {
         WebDriverHelper.waitUntilPageCompletelyLoad();
-        currentPasswordField.sendKeys(Password);
+        currentPasswordField.sendKeys(NewPassword);
     }
 
     public void enterNewPassword() {
-        newPasswordField.sendKeys(NewPassword);
+        newPasswordField.sendKeys(Password);
     }
 
     public void enterConfirmPassword() {
-        confirmPasswordField.sendKeys(NewPassword);
+        confirmPasswordField.sendKeys(Password);
     }
 
     public void clickSaveChangePasswordButton()  {
@@ -92,8 +92,8 @@ public class passwordReset {
 
     public void enterDetailsOnPasswordResetPage() {
         WebDriverHelper.waitUntilVisible(email, 15, 3);
-        newPasswordField.sendKeys("NewPassword");
-        confirmPasswordField.sendKeys("NewPassword");
+        newPasswordField.sendKeys(NewPassword);
+        confirmPasswordField.sendKeys(NewPassword);
     }
 
     public void clickRestPasswordButton() {

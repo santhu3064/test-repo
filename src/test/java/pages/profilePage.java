@@ -20,7 +20,7 @@ public class profilePage {
 
     Properties props = new Properties();
     public final String newProfilename=WebDriverHelper.getRandomAlphabeticString(5);
-    public final String newProfileEmail = "Auto" + WebDriverHelper.getRandomAlphanumericEmailString(5, "@yopmail.com");
+    public final String newProfileEmail = "auto" + WebDriverHelper.getRandomAlphanumericEmailString(5, "@yopmail.com").toLowerCase();
     public final String newPhone = "9" + WebDriverHelper.getRandomNumeric(9);
 
     public profilePage(WebDriver driver) {

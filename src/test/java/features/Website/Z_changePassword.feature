@@ -5,7 +5,7 @@ Feature: Change password from profile page
     Given user launches the InstaBee portal on browser
     And user lands on login page by clicking the login button
     And user enters email on the login page
-    And user enters password on the login page
+    And user enters new password on the login page
     And user clicks submit login button on the login page
     And user should land on home page successfully
     And user clicks the options menu
@@ -18,7 +18,7 @@ Feature: Change password from profile page
      And user clicks logout link
     And user lands on login page by clicking the login button
     And user enters email on the login page
-    And user enters new password on the login page
+    And user enters password on the login page
     And user clicks submit login button on the login page
     Then user should land on home page successfully
 

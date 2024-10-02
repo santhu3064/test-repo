@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import static support.DeviceCreation.driver;
+import static support.PropertiesReader.Password;
 
 public class registrationPage {
 
@@ -49,8 +50,7 @@ public class registrationPage {
     WebElement OTP;
 
 
-    public final String emailAddress = "Auto" + WebDriverHelper.getRandomAlphanumericEmailString(5, "@yopmail.com");
-
+    public final String emailAddress = "auto" + WebDriverHelper.getRandomAlphanumericEmailString(5, "@yopmail.com").toLowerCase();
     private final String mobileNumber = "9"+ WebDriverHelper.getRandomNumeric(9);
 
     public registrationPage(WebDriver driver) {
@@ -75,12 +75,12 @@ public class registrationPage {
     }
 
     public void enterRegPassword() {
-        regPassword.sendKeys("InstaBee123!");
+        regPassword.sendKeys(Password);
     }
 
 
     public void enterRegConfirmPassword() {
-        regConfirmPassword.sendKeys("InstaBee123!");
+        regConfirmPassword.sendKeys(Password);
     }
 
     public void submitRegistration() throws IOException {
