@@ -43,9 +43,12 @@ public class companyPage {
         companyName.sendKeys("");
         Thread.sleep(2000);
         assertEquals(CompanyPhoneTest, companyPhone.getAttribute("value"));
+        driver.navigate().refresh();
+        Thread.sleep(3000);
     }
 
-    public void selectBusinessTypeAndCategoryAndClickCreateCompany() throws InterruptedException {
+    public void selectNameBusinessTypeAndCategoryAndClickCreateCompany() throws InterruptedException {
+        companyName.sendKeys("Furiosa");
         Select businesstypedropdown = new Select(driver.findElement(By.xpath("//select[contains(@id,'data.business_type_id')]")));
         businesstypedropdown.selectByVisibleText("Footwear");
         businessCategory.click();

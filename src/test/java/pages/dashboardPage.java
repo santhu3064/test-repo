@@ -27,6 +27,6 @@ public class dashboardPage {
 
     public void checkCompanyNameShownOnLeftNav() {
         WebDriverHelper.waitUntilVisible(menuOnLeftNav, 15, 3);
-        assertEquals(CompanyNameTest, menuOnLeftNav.getText());
+        assertEquals("Furiosa", menuOnLeftNav.getText());
     }
 }
