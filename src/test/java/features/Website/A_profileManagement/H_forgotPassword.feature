@@ -1,6 +1,6 @@
 Feature: Forgot password flow
 
-  @Portal @ForgotPassword
+  @Portal @ForgotPassword @Profile
   Scenario Outline: Check if the user can change password successfully through forgot password flow
     Given user launches the InstaBee portal on browser
     And user lands on login page by clicking the login button

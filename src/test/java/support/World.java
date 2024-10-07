@@ -18,6 +18,10 @@ public class World {
 
     public static profilePage objProfilePage;
 
+    public static companyPage objCompanyPage;
+
+    public static dashboardPage objDashboardPage;
+
     final WebDriver driver = new DeviceCreation().getBrowserDriver();
 
     public void driverClass() {
@@ -28,6 +32,8 @@ public class World {
         World.objLogoutPage = new logoutPage(driver);
         World.objPasswordReset = new passwordReset(driver);
         World.objProfilePage = new profilePage(driver);
+        World.objCompanyPage = new companyPage(driver);
+        World.objDashboardPage = new dashboardPage(driver);
     }
 }
 

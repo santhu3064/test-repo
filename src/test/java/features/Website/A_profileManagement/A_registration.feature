@@ -1,6 +1,6 @@
 Feature: Registration flow
 
-   @Portal @Registration
+   @Portal @Registration @Profile
   Scenario Outline: Check if the user can register successfully through email OTP authentication
     Given user launches the InstaBee portal on browser
     And user lands on registration page by clicking the try InstaBee free button
