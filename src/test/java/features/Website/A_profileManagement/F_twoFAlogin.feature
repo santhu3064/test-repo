@@ -1,6 +1,6 @@
 Feature: 2FA login flow
 
-  @Portal @2FALogin
+  @Portal @2FALogin @Profile
   Scenario Outline: Check if the user can use 2FA login feature by toggle ON from profile page. Also can disable the same from profile page
     Given user launches the InstaBee portal on browser
     And user lands on login page by clicking the login button

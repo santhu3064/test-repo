@@ -12,8 +12,8 @@ public class PropertiesReader {
 
     public static String platform_url;
 
-
     public static String yopMail_url;
+
     public static String NewRegisterUserEmail;
 
     public static String NewRegisterMobileNumber;
@@ -21,6 +21,12 @@ public class PropertiesReader {
     public static String Password;
 
     public static String NewPassword;
+
+    public static String CompanyNameTest;
+
+    public static String CompanyPhoneTest;
+
+    public static String CompanyGSTIN;
 
 
     public void loadProperties() throws IOException {
@@ -39,6 +45,9 @@ public class PropertiesReader {
         NewRegisterMobileNumber = data.getProperty("NewRegisterMobileNumber");
         Password = data.getProperty("Password");
         NewPassword = data.getProperty("NewPassword");
+        CompanyNameTest = data.getProperty("CompanyNameTest");
+        CompanyPhoneTest = data.getProperty("CompanyPhoneTest");
+        CompanyGSTIN = data.getProperty("CompanyGSTIN");
     }
 
 }

@@ -1,6 +1,6 @@
 Feature: Change password from profile page
 
-   @Portal @ChangePassword
+   @Portal @ChangePassword @Profile
   Scenario Outline: Check if the user can change password from profile page and re-login with new password
     Given user launches the InstaBee portal on browser
     And user lands on login page by clicking the login button
