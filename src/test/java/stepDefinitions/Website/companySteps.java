@@ -16,9 +16,9 @@ public class companySteps {
     }
 
 
-    @And("select business type and business category and click create company")
-    public void select_business_type_and_business_category_and_click_next_and_click_create_company() throws InterruptedException {
-     objCompanyPage.selectBusinessTypeAndCategoryAndClickCreateCompany();
+    @And("select name, business type and business category and click create company")
+    public void select_name_business_type_and_business_category_and_click_next_and_click_create_company() throws InterruptedException {
+     objCompanyPage.selectNameBusinessTypeAndCategoryAndClickCreateCompany();
     }
 
     @And("user lands on dashboard")
