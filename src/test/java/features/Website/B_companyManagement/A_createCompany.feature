@@ -1,7 +1,7 @@
 Feature: Create company flow
 
   @Portal @CreateCompany @Company
-  Scenario Outline: Check if the user can login using the email & password successfully
+  Scenario Outline: Check if the user can create company successfully using the GSTIN ID
     Given user launches the InstaBee portal on browser
     And user lands on login page by clicking the login button
     And user enters email on the login page
