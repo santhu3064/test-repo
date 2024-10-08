@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-10-02T17:07:33.858Z",
+        "start_timestamp": "2024-10-08T20:06:29.581Z",
         "before": [
           {
             "result": {
-              "duration": 3211639000,
+              "duration": 3623764000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 163170000,
+              "duration": 216538000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6912228000,
+              "duration": 7088055000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 636774000,
+              "duration": 726295000,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 45847000,
+              "duration": 123912000,
               "status": "passed"
             },
             "line": 7,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 27124000,
+              "duration": 39234000,
               "status": "passed"
             },
             "line": 8,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 27607000,
+              "duration": 70754000,
               "status": "passed"
             },
             "line": 9,
@@ -95,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 27351000,
+              "duration": 45119000,
               "status": "passed"
             },
             "line": 10,
@@ -107,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 23698000,
+              "duration": 34648000,
               "status": "passed"
             },
             "line": 11,
@@ -119,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 40240000,
+              "duration": 64473000,
               "status": "passed"
             },
             "line": 12,
@@ -131,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 5661499000,
+              "duration": 6642925000,
               "status": "passed"
             },
             "line": 13,
@@ -143,7 +143,7 @@
           },
           {
             "result": {
-              "duration": 11583048000,
+              "duration": 10628014000,
               "status": "passed"
             },
             "line": 14,
@@ -155,7 +155,7 @@
           },
           {
             "result": {
-              "duration": 44259000,
+              "duration": 43512000,
               "status": "passed"
             },
             "line": 15,
@@ -167,7 +167,7 @@
           },
           {
             "result": {
-              "duration": 6960660000,
+              "duration": 7668590000,
               "status": "passed"
             },
             "line": 16,
@@ -184,6 +184,9 @@
           },
           {
             "name": "@Registration"
+          },
+          {
+            "name": "@Profile"
           }
         ]
       }
@@ -192,414 +195,18 @@
     "description": "",
     "id": "registration-flow",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/Website/A_registration.feature",
+    "uri": "file:src/test/java/features/Website/A_profileManagement/A_registration.feature",
     "tags": []
   },
   {
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-10-02T17:08:09.237Z",
+        "start_timestamp": "2024-10-08T20:07:06.631Z",
         "before": [
           {
             "result": {
-              "duration": 3044631000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "Check if the user can login using the email \u0026 password successfully",
-        "description": "",
-        "id": "email-login-flow;check-if-the-user-can-login-using-the-email-\u0026-password-successfully;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 151788000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 6918739000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user launches the InstaBee portal on browser",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 731346000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user lands on login page by clicking the login button",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 80775000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user enters email on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_email_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 27353000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user enters password on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_password_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35337000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user clicks submit login button on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7856543000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user should land on home page successfully",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Portal"
-          },
-          {
-            "name": "@Login"
-          }
-        ]
-      }
-    ],
-    "name": "Email login flow",
-    "description": "",
-    "id": "email-login-flow",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/features/Website/B_emailLogin.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2024-10-02T17:08:28.089Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3143615000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Check if the user can login using the gmail email \u0026 password successfully",
-        "description": "",
-        "id": "social-media-login-flow;check-if-the-user-can-login-using-the-gmail-email-\u0026-password-successfully;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 153500000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5879936000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user launches the InstaBee portal on browser",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 335413000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user lands on login page by clicking the login button",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 42804000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user clicks the gmail login button",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_clicks_the_gmail_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5645550000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user enters the gmail email and hit next",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_the_gmail_email_and_hit_next()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5076821000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user enters the gmail password",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_the_gmail_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29674000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user hit submit",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_hit_submit()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5036464000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user should land on home page successfully",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Portal"
-          },
-          {
-            "name": "@SocialLogin"
-          }
-        ]
-      }
-    ],
-    "name": "Social media login flow",
-    "description": "",
-    "id": "social-media-login-flow",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/features/Website/C_socialLoginGmail.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2024-10-02T17:08:53.438Z",
-        "before": [
-          {
-            "result": {
-              "duration": 4174999000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Check if the user can login using mobile OTP",
-        "description": "",
-        "id": "mobile-otp-login;check-if-the-user-can-login-using-mobile-otp;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 166619000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5871698000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user launches the InstaBee portal on browser",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 680743000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user lands on login page by clicking the login button",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29156000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user clicks the login with OTP button",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_clicks_the_login_with_OTP_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7945908000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user enters the valid phone number registered with the player and hit verify",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_the_valid_phone_number_registered_with_the_player_and_hit_verify()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10501207000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user gets OTP from the email for login",
-            "match": {
-              "location": "stepDefinitions.Website.mailinatorSteps.user_gets_OTP_from_the_email_for_login()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 45387000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user enters the OTP and hit submit",
-            "match": {
-              "location": "stepDefinitions.Website.registrationSteps.user_enters_the_OTP_and_hit_submit()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6959581000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user should land on home page successfully",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Portal"
-          },
-          {
-            "name": "@OTPLogin"
-          }
-        ]
-      }
-    ],
-    "name": "Mobile OTP login",
-    "description": "",
-    "id": "mobile-otp-login",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/features/Website/D_mobileOTPLogin.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2024-10-02T17:09:29.819Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2281531000,
+              "duration": 2620344000,
               "status": "passed"
             },
             "match": {
@@ -608,13 +215,13 @@
           }
         ],
         "line": 20,
-        "name": "Check if the user can successfully",
+        "name": "Check if the user can create company successfully using the GSTIN ID",
         "description": "",
-        "id": "logout-flow;check-if-the-user-can-successfully;;2",
+        "id": "create-company-flow;check-if-the-user-can-create-company-successfully-using-the-gstin-id;;2",
         "after": [
           {
             "result": {
-              "duration": 139525000,
+              "duration": 179365000,
               "status": "passed"
             },
             "match": {
@@ -627,7 +234,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6011817000,
+              "duration": 7100357000,
               "status": "passed"
             },
             "line": 5,
@@ -639,7 +246,7 @@
           },
           {
             "result": {
-              "duration": 771185000,
+              "duration": 746224000,
               "status": "passed"
             },
             "line": 6,
@@ -651,7 +258,7 @@
           },
           {
             "result": {
-              "duration": 65223000,
+              "duration": 137521000,
               "status": "passed"
             },
             "line": 7,
@@ -663,7 +270,7 @@
           },
           {
             "result": {
-              "duration": 24253000,
+              "duration": 40474000,
               "status": "passed"
             },
             "line": 8,
@@ -675,7 +282,7 @@
           },
           {
             "result": {
-              "duration": 32618000,
+              "duration": 85667000,
               "status": "passed"
             },
             "line": 9,
@@ -687,7 +294,7 @@
           },
           {
             "result": {
-              "duration": 7743029000,
+              "duration": 7762588000,
               "status": "passed"
             },
             "line": 10,
@@ -699,39 +306,51 @@
           },
           {
             "result": {
-              "duration": 39662000,
+              "duration": 5157915000,
               "status": "passed"
             },
             "line": 11,
-            "name": "user clicks the options menu",
+            "name": "user enters the GSTIN value and observe all the details are auto populated",
             "match": {
-              "location": "stepDefinitions.Website.logoutSteps.user_clicks_the_options_menu()"
+              "location": "stepDefinitions.Website.companySteps.user_enters_the_GSTIN_value_and_observe_all_the_details_are_auto_populated()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3064387000,
+              "duration": 195174000,
               "status": "passed"
             },
             "line": 12,
-            "name": "user clicks sign out button",
+            "name": "select name, business type and business category and click create company",
             "match": {
-              "location": "stepDefinitions.Website.logoutSteps.user_clicks_sign_out_button()"
+              "location": "stepDefinitions.Website.companySteps.select_name_business_type_and_business_category_and_click_next_and_click_create_company()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1225793000,
+              "duration": 3027573000,
               "status": "passed"
             },
             "line": 13,
-            "name": "user gets logged out successfully",
+            "name": "user lands on dashboard",
             "match": {
-              "location": "stepDefinitions.Website.logoutSteps.user_gets_logged_out_successfully()"
+              "location": "stepDefinitions.Website.dashboardSteps.user_lands_on_dashboard()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28337000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "company created is displayed on left navigation options on dashboard page",
+            "match": {
+              "location": "stepDefinitions.Website.companySteps.company_created_is_displayed_on_left_navigation_options_on_dashboard_page()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -739,27 +358,30 @@
             "name": "@Portal"
           },
           {
-            "name": "@Logout"
+            "name": "@CreateCompany"
+          },
+          {
+            "name": "@Company"
           }
         ]
       }
     ],
-    "name": "Logout flow",
+    "name": "Create company flow",
     "description": "",
-    "id": "logout-flow",
+    "id": "create-company-flow",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/Website/E_logout.feature",
+    "uri": "file:src/test/java/features/Website/B_companyManagement/A_createCompany.feature",
     "tags": []
   },
   {
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-10-02T17:09:51.223Z",
+        "start_timestamp": "2024-10-08T20:07:33.724Z",
         "before": [
           {
             "result": {
-              "duration": 2079757000,
+              "duration": 2631896000,
               "status": "passed"
             },
             "match": {
@@ -767,14 +389,14 @@
             }
           }
         ],
-        "line": 22,
-        "name": "Check if the user can use 2FA login feature by toggle ON from profile page. Also can disable the same from profile page",
+        "line": 21,
+        "name": "Check if the company settings page is loaded with all sections and user can update company settings successfully",
         "description": "",
-        "id": "2fa-login-flow;check-if-the-user-can-use-2fa-login-feature-by-toggle-on-from-profile-page.-also-can-disable-the-same-from-profile-page;;2",
+        "id": "update-company-settings-flow;check-if-the-company-settings-page-is-loaded-with-all-sections-and-user-can-update-company-settings-successfully;;2",
         "after": [
           {
             "result": {
-              "duration": 142756000,
+              "duration": 170601000,
               "status": "passed"
             },
             "match": {
@@ -787,7 +409,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5885180000,
+              "duration": 7135166000,
               "status": "passed"
             },
             "line": 5,
@@ -799,7 +421,7 @@
           },
           {
             "result": {
-              "duration": 427484000,
+              "duration": 834465000,
               "status": "passed"
             },
             "line": 6,
@@ -811,7 +433,7 @@
           },
           {
             "result": {
-              "duration": 59252000,
+              "duration": 107656000,
               "status": "passed"
             },
             "line": 7,
@@ -823,7 +445,7 @@
           },
           {
             "result": {
-              "duration": 24051000,
+              "duration": 38124000,
               "status": "passed"
             },
             "line": 8,
@@ -835,7 +457,7 @@
           },
           {
             "result": {
-              "duration": 44779000,
+              "duration": 72450000,
               "status": "passed"
             },
             "line": 9,
@@ -847,87 +469,51 @@
           },
           {
             "result": {
-              "duration": 8092875000,
+              "duration": 5862624000,
               "status": "passed"
             },
             "line": 10,
-            "name": "user should land on home page successfully",
+            "name": "user lands on dashboard",
             "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
+              "location": "stepDefinitions.Website.dashboardSteps.user_lands_on_dashboard()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 39265000,
+              "duration": 3103673000,
               "status": "passed"
             },
             "line": 11,
-            "name": "user clicks the options menu",
+            "name": "user lands on company settings page",
             "match": {
-              "location": "stepDefinitions.Website.logoutSteps.user_clicks_the_options_menu()"
+              "location": "stepDefinitions.Website.dashboardSteps.user_lands_on_company_settings_page()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5069110000,
+              "duration": 4752776000,
               "status": "passed"
             },
             "line": 12,
-            "name": "user opens the profile page",
+            "name": "all the sections on company settings page are loaded",
             "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.user_opens_the_profile_page()"
+              "location": "stepDefinitions.Website.companySteps.all_the_sections_on_company_settings_page_are_loaded()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3887510000,
+              "duration": 10767811000,
               "status": "passed"
             },
             "line": 13,
-            "name": "user click enable 2FA button",
+            "name": "user can update the company settings successfully",
             "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_click_enable_2FA_button()"
+              "location": "stepDefinitions.Website.companySteps.user_can_update_the_company_settings_successfully()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3064125000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user enter password to confirm 2FA popup",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enter_password_to_confirm_2FA_popup()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5027108000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user hit submit button to confirm 2FA popup",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_hit_submit_button_to_confirm_2FA_popup()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 41478000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user is show with QA code, field to enter the auth code and confirm button",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_is_show_with_QA_code_field_to_enter_the_auth_code_and_confirm_button()"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
@@ -935,820 +521,19 @@
             "name": "@Portal"
           },
           {
-            "name": "@2FALogin"
+            "name": "@CompanySettings"
+          },
+          {
+            "name": "@Company"
           }
         ]
       }
     ],
-    "name": "2FA login flow",
+    "name": "Update company settings flow",
     "description": "",
-    "id": "2fa-login-flow",
+    "id": "update-company-settings-flow",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/Website/F_twoFAlogin.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2024-10-02T17:10:25.115Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2384999000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 38,
-        "name": "Check if all the sections on profile page are loaded and user can update personla info",
-        "description": "",
-        "id": "validate-user-profile-page-and-update-personal-details;check-if-all-the-sections-on-profile-page-are-loaded-and-user-can-update-personla-info;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 155334000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5884117000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user launches the InstaBee portal on browser",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 676361000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user lands on login page by clicking the login button",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 70588000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user enters email on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_email_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 24391000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user enters password on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_password_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 33696000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user clicks submit login button on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7910541000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user should land on home page successfully",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 40188000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user clicks the options menu",
-            "match": {
-              "location": "stepDefinitions.Website.logoutSteps.user_clicks_the_options_menu()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5069883000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user opens the profile page",
-            "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.user_opens_the_profile_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 679572000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "profile info section is present on profile page",
-            "match": {
-              "location": "stepDefinitions.Website.profilePageSteps.profile_info_section_is_present_on_profile_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 10532000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "update password section is present on profile page",
-            "match": {
-              "location": "stepDefinitions.Website.profilePageSteps.update_password_section_is_present_on_profile_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3034128000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "2FA section is present on profile page",
-            "match": {
-              "location": "stepDefinitions.Website.profilePageSteps.twofa_section_is_present_on_profile_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 15753000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "broswer sessions section is present on profile page",
-            "match": {
-              "location": "stepDefinitions.Website.profilePageSteps.broswer_sessions_section_is_present_on_profile_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 11311000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "delete account section is present on profile page",
-            "match": {
-              "location": "stepDefinitions.Website.profilePageSteps.delete_account_section_is_present_on_profile_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6215122000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user updates profile information on profile info section",
-            "match": {
-              "location": "stepDefinitions.Website.profilePageSteps.user_updates_profile_information_on_profile_info_section()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 24824000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user clicks the options menu",
-            "match": {
-              "location": "stepDefinitions.Website.logoutSteps.user_clicks_the_options_menu()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3075565000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user clicks logout link",
-            "match": {
-              "location": "stepDefinitions.Website.logoutSteps.user_clicks_logout_link()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1865744000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user lands on login page by clicking the login button",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 23803000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "user enters the updated email on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_the_updated_email_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 23370000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user enters password on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_password_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 26090000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "user clicks submit login button on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7990513000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "user should land on home page successfully",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Portal"
-          },
-          {
-            "name": "@UserProfile"
-          }
-        ]
-      }
-    ],
-    "name": "Validate user profile page and update personal details",
-    "description": "",
-    "id": "validate-user-profile-page-and-update-personal-details",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/features/Website/G_userProfile.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2024-10-02T17:11:10.368Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2730711000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 23,
-        "name": "Check if the user can change password successfully through forgot password flow",
-        "description": "",
-        "id": "forgot-password-flow;check-if-the-user-can-change-password-successfully-through-forgot-password-flow;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 166358000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5897887000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user launches the InstaBee portal on browser",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 663131000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user lands on login page by clicking the login button",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32972000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user clicks forgot password link",
-            "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.user_clicks_forgot_password_link()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 502340000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user lands on forgot password rest email sending page",
-            "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.user_lands_on_forgot_password_rest_email_sending_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 82636000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user enters emails and hit submit",
-            "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.user_enters_emails_and_hit_submit()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5746750000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "password reset email sent successfully",
-            "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.password_reset_email_sent_successfully()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9591369000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user lands on password reset page by following link in email",
-            "match": {
-              "location": "stepDefinitions.Website.mailinatorSteps.user_lands_on_password_reset_page_by_following_link_in_email()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3098335000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user enters email, password and confirm password on password reset page",
-            "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.user_enters_email_password_and_confirm_password_on_password_reset_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 33296000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user clicks reset password button",
-            "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.user_clicks_reset_password_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2158973000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "player lands on login page and password reset successfully message is shown",
-            "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.player_lands_on_login_page_and_password_reset_successfully_message_is_shown()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 25973000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user enters email on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_email_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34430000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user enters new password on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_new_password_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29805000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user clicks submit login button on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7606231000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user should land on home page successfully",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Portal"
-          },
-          {
-            "name": "@ForgotPassword"
-          }
-        ]
-      }
-    ],
-    "name": "Forgot password flow",
-    "description": "",
-    "id": "forgot-password-flow",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/features/Website/H_forgotPassword.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2024-10-02T17:11:48.775Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3109566000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 33,
-        "name": "Check if the user can change password from profile page and re-login with new password",
-        "description": "",
-        "id": "change-password-from-profile-page;check-if-the-user-can-change-password-from-profile-page-and-re-login-with-new-password;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 158790000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 6031732000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user launches the InstaBee portal on browser",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 301308000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user lands on login page by clicking the login button",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 78688000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user enters email on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_email_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 25195000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user enters new password on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_new_password_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32259000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user clicks submit login button on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8230672000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user should land on home page successfully",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 42342000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user clicks the options menu",
-            "match": {
-              "location": "stepDefinitions.Website.logoutSteps.user_clicks_the_options_menu()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5071241000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user opens the profile page",
-            "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.user_opens_the_profile_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1824497000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user enters the current password on update password section",
-            "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.user_enters_the_current_password_on_update_password_section()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32050000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user enters the new password on update password section",
-            "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.user_enters_the_new_password_on_update_password_section()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 36041000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user enters the confirm password on the update password section",
-            "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.user_enters_the_confirm_password_on_the_update_password_section()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 39632000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user hits save button",
-            "match": {
-              "location": "stepDefinitions.Website.passwordResetSteps.user_hits_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 33075000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user clicks the options menu",
-            "match": {
-              "location": "stepDefinitions.Website.logoutSteps.user_clicks_the_options_menu()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3066890000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user clicks logout link",
-            "match": {
-              "location": "stepDefinitions.Website.logoutSteps.user_clicks_logout_link()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1879077000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user lands on login page by clicking the login button",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34138000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user enters email on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_email_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 45986000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user enters password on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_enters_password_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34315000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "user clicks submit login button on the login page",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7727757000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user should land on home page successfully",
-            "match": {
-              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Portal"
-          },
-          {
-            "name": "@ChangePassword"
-          }
-        ]
-      }
-    ],
-    "name": "Change password from profile page",
-    "description": "",
-    "id": "change-password-from-profile-page",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/features/Website/Z_changePassword.feature",
+    "uri": "file:src/test/java/features/Website/B_companyManagement/B_companySettings.feature",
     "tags": []
   }
 ]

@@ -2,10 +2,6 @@ package stepDefinitions.Website;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-
-import static support.DeviceCreation.driver;
 import static support.World.objCompanyPage;
 import static support.World.objDashboardPage;
 
@@ -21,17 +17,23 @@ public class companySteps {
      objCompanyPage.selectNameBusinessTypeAndCategoryAndClickCreateCompany();
     }
 
-    @And("user lands on dashboard")
-    public void user_lands_on_dashboard() {
-    objDashboardPage.checkUserLandsOnDashbaord();
-    }
-
-
-
-    @Then("company created is displayed on left navigation options on dashboard page")
+    @And("company created is displayed on left navigation options on dashboard page")
     public void company_created_is_displayed_on_left_navigation_options_on_dashboard_page() throws InterruptedException {
-objDashboardPage.checkCompanyNameShownOnLeftNav();
+    objDashboardPage.checkCompanyNameShownOnLeftNav();
     }
+
+    @Then("all the sections on company settings page are loaded")
+    public void all_the_sections_on_company_settings_page_are_loaded() {
+  objCompanyPage.validateSectionsOnCompanySettingsPage();
+    }
+
+
+    @And("user can update the company settings successfully")
+    public void user_can_update_the_company_settings_successfully() throws InterruptedException {
+objCompanyPage.updateCompanySettings();
+    }
+
+
 
 
 }

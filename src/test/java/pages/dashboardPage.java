@@ -21,6 +21,9 @@ public class dashboardPage {
     WebElement menuOnLeftNav;
 
 
+    @FindBy(xpath = "//span[contains(text(), 'Company Settings')]")
+    WebElement companySettingsOptionInLeftNavOnDashboard;
+
     public void checkUserLandsOnDashbaord() {
         WebDriverHelper.waitUntilVisible(dashboardPageTitle, 15, 3);
     }
@@ -28,5 +31,12 @@ public class dashboardPage {
     public void checkCompanyNameShownOnLeftNav() {
         WebDriverHelper.waitUntilVisible(menuOnLeftNav, 15, 3);
         assertEquals("Furiosa", menuOnLeftNav.getText());
+    }
+
+    public void openCompanySettingsPage() throws InterruptedException {
+        menuOnLeftNav.click();
+        WebDriverHelper.waitUntilVisible(companySettingsOptionInLeftNavOnDashboard, 15, 3);
+        companySettingsOptionInLeftNavOnDashboard.click();
+
     }
 }

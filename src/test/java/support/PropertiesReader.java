@@ -26,6 +26,12 @@ public class PropertiesReader {
 
     public static String CompanyPhoneTest;
 
+    public static String CompanyEmailTest;
+
+    public static String CompanyAddressTest;
+
+    public static String CompanyStateTest;
+
     public static String CompanyGSTIN;
 
 
@@ -47,7 +53,10 @@ public class PropertiesReader {
         NewPassword = data.getProperty("NewPassword");
         CompanyNameTest = data.getProperty("CompanyNameTest");
         CompanyPhoneTest = data.getProperty("CompanyPhoneTest");
+        CompanyEmailTest = data.getProperty("CompanyEmailTest");
         CompanyGSTIN = data.getProperty("CompanyGSTIN");
+        CompanyAddressTest = data.getProperty("CompanyAddressTest");
+        CompanyStateTest = data.getProperty("CompanyStateTest");
     }
 
 }
