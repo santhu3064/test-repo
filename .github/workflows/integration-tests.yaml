@@ -14,7 +14,7 @@ jobs:
 
     services:
       chrome:
-        image: seleniarm/standalone-chrome:latest
+        image: seleniarm/standalone-chromium:latest
         ports:
           - 4444:4444
         options: >-
