@@ -25,9 +25,10 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Set up JDK
-      uses: actions/setup-java@v2
+      uses: actions/setup-java@v4
       with:
-        java-version: '21'  # Use the JDK version you need
+        java-version: '21'
+        # cache: 'maven'  # Use the JDK version you need
 
     - name: Cache Maven packages
       uses: actions/cache@v2
