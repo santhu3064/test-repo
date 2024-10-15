@@ -50,3 +50,25 @@ jobs:
       run: mvn test -Dtest=testRunner
       env:
         DISPLAY: ':99'
+
+    - name: Archive Test Results
+      if: always()  # Always archive, even if tests fail
+      uses: actions/upload-artifact@v3
+      with:
+        name: selenium-test-reports
+        path: target/surefire-reports
+
+    - name: Print Test Results to Console
+      run: |
+        ls -lrt 
+        ls -lrt target/surefire-reports
+        cat target/surefire-reports/*.txt || true
+
+    - name: Upload Test Report HTML (if exists)
+      run: |
+        if [ -f target/surefire-reports/index.html ]; then
+          echo "HTML report generated."
+          cat target/surefire-reports/index.html
+        else
+          echo "HTML report not found."
+        fi
