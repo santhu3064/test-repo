@@ -1,0 +1,44 @@
+name: Run Selenium Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      chrome:
+        image: seleniarm/standalone-chrome:latest
+        ports:
+          - 4444:4444
+        options: >-
+          --shm-size 2g
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up JDK
+      uses: actions/setup-java@v2
+      with:
+        java-version: '12'  # Use the JDK version you need
+
+    - name: Cache Maven packages
+      uses: actions/cache@v2
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+
+    - name: Install dependencies
+      run: mvn install -DskipTests
+
+    - name: Run Selenium Tests
+      run: mvn test -Dtest=InstaBeeTestAutomation
