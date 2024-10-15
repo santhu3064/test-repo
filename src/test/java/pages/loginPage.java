@@ -81,6 +81,7 @@ public class loginPage {
         Thread.sleep(3000);
         if (driver.findElements(By.xpath("//button[contains(text(),'Allow cookies')]")).size()>0){
             allowCookiesButton.click();
+            Thread.sleep(3000);
         }
     }
 
