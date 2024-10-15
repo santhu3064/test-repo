@@ -48,3 +48,5 @@ jobs:
 
     - name: Run Selenium Tests
       run: mvn test -Dtest=testRunner
+      env:
+        DISPLAY: ':99'
