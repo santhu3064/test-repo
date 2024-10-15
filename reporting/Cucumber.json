@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-10-08T20:06:29.581Z",
+        "start_timestamp": "2024-10-15T23:18:56.841Z",
         "before": [
           {
             "result": {
-              "duration": 3623764000,
+              "duration": 5975284000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 216538000,
+              "duration": 174982000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7088055000,
+              "duration": 10658471000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 726295000,
+              "duration": 1099867000,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 123912000,
+              "duration": 91707000,
               "status": "passed"
             },
             "line": 7,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 39234000,
+              "duration": 39375000,
               "status": "passed"
             },
             "line": 8,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 70754000,
+              "duration": 62375000,
               "status": "passed"
             },
             "line": 9,
@@ -95,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 45119000,
+              "duration": 46126000,
               "status": "passed"
             },
             "line": 10,
@@ -107,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 34648000,
+              "duration": 37345000,
               "status": "passed"
             },
             "line": 11,
@@ -119,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 64473000,
+              "duration": 69424000,
               "status": "passed"
             },
             "line": 12,
@@ -131,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 6642925000,
+              "duration": 7897521000,
               "status": "passed"
             },
             "line": 13,
@@ -143,7 +143,7 @@
           },
           {
             "result": {
-              "duration": 10628014000,
+              "duration": 12774373000,
               "status": "passed"
             },
             "line": 14,
@@ -155,7 +155,7 @@
           },
           {
             "result": {
-              "duration": 43512000,
+              "duration": 45014000,
               "status": "passed"
             },
             "line": 15,
@@ -167,7 +167,7 @@
           },
           {
             "result": {
-              "duration": 7668590000,
+              "duration": 7853304000,
               "status": "passed"
             },
             "line": 16,
@@ -202,11 +202,1591 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-10-08T20:07:06.631Z",
+        "start_timestamp": "2024-10-15T23:19:43.695Z",
         "before": [
           {
             "result": {
-              "duration": 2620344000,
+              "duration": 5396748000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Check if the user can login using the email \u0026 password successfully",
+        "description": "",
+        "id": "email-login-flow;check-if-the-user-can-login-using-the-email-\u0026-password-successfully;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 157053000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10812079000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches the InstaBee portal on browser",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1257507000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user lands on login page by clicking the login button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96566000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters email on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_email_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38383000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters password on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_password_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55789000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks submit login button on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9180335000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should land on home page successfully",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Portal"
+          },
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Profile"
+          }
+        ]
+      }
+    ],
+    "name": "Email login flow",
+    "description": "",
+    "id": "email-login-flow",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Website/A_profileManagement/B_emailLogin.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-15T23:20:10.697Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5230306000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Check if the user can login using the gmail email \u0026 password successfully",
+        "description": "",
+        "id": "social-media-login-flow;check-if-the-user-can-login-using-the-gmail-email-\u0026-password-successfully;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 174158000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10407155000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches the InstaBee portal on browser",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1215621000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user lands on login page by clicking the login button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41624000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks the gmail login button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_clicks_the_gmail_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6663589000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters the gmail email and hit next",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_the_gmail_email_and_hit_next()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5082395000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters the gmail password",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_the_gmail_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42395000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user hit submit",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_hit_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10084784000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should land on home page successfully",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Portal"
+          },
+          {
+            "name": "@SocialLogin"
+          },
+          {
+            "name": "@Profile"
+          }
+        ]
+      }
+    ],
+    "name": "Social media login flow",
+    "description": "",
+    "id": "social-media-login-flow",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Website/A_profileManagement/C_socialLoginGmail.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-15T23:20:49.647Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5238897000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Check if the user can login using mobile OTP",
+        "description": "",
+        "id": "mobile-otp-login;check-if-the-user-can-login-using-mobile-otp;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 165297000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10600523000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches the InstaBee portal on browser",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1034887000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user lands on login page by clicking the login button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37372000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks the login with OTP button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_clicks_the_login_with_OTP_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6594040000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters the valid phone number registered with the player and hit verify",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_the_valid_phone_number_registered_with_the_player_and_hit_verify()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12829742000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user gets OTP from the email for login",
+            "match": {
+              "location": "stepDefinitions.Website.mailinatorSteps.user_gets_OTP_from_the_email_for_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52193000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters the OTP and hit submit",
+            "match": {
+              "location": "stepDefinitions.Website.registrationSteps.user_enters_the_OTP_and_hit_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8160349000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should land on home page successfully",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Portal"
+          },
+          {
+            "name": "@OTPLogin"
+          },
+          {
+            "name": "@Profile"
+          }
+        ]
+      }
+    ],
+    "name": "Mobile OTP login",
+    "description": "",
+    "id": "mobile-otp-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Website/A_profileManagement/D_mobileOTPLogin.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-15T23:21:34.368Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5336053000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Check if the user can successfully",
+        "description": "",
+        "id": "logout-flow;check-if-the-user-can-successfully;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 160408000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10643641000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches the InstaBee portal on browser",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1222556000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user lands on login page by clicking the login button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96570000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters email on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_email_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35049000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters password on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_password_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53833000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks submit login button on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9336150000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should land on home page successfully",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47180000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks the options menu",
+            "match": {
+              "location": "stepDefinitions.Website.logoutSteps.user_clicks_the_options_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3074875000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks sign out button",
+            "match": {
+              "location": "stepDefinitions.Website.logoutSteps.user_clicks_sign_out_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2181074000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user gets logged out successfully",
+            "match": {
+              "location": "stepDefinitions.Website.logoutSteps.user_gets_logged_out_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Portal"
+          },
+          {
+            "name": "@Logout"
+          },
+          {
+            "name": "@Profile"
+          }
+        ]
+      }
+    ],
+    "name": "Logout flow",
+    "description": "",
+    "id": "logout-flow",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Website/A_profileManagement/E_logout.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-15T23:22:06.562Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5190928000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Check if the user can use 2FA login feature by toggle ON from profile page. Also can disable the same from profile page",
+        "description": "",
+        "id": "2fa-login-flow;check-if-the-user-can-use-2fa-login-feature-by-toggle-on-from-profile-page.-also-can-disable-the-same-from-profile-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 161690000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10644153000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches the InstaBee portal on browser",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1161730000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user lands on login page by clicking the login button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104958000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters email on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_email_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37108000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters password on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_password_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59424000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks submit login button on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9451425000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should land on home page successfully",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47392000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks the options menu",
+            "match": {
+              "location": "stepDefinitions.Website.logoutSteps.user_clicks_the_options_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5076633000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user opens the profile page",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.user_opens_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4466287000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click enable 2FA button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_click_enable_2FA_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3073250000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enter password to confirm 2FA popup",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enter_password_to_confirm_2FA_popup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5031299000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user hit submit button to confirm 2FA popup",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_hit_submit_button_to_confirm_2FA_popup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41877000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user is show with QA code, field to enter the auth code and confirm button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_is_show_with_QA_code_field_to_enter_the_auth_code_and_confirm_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Portal"
+          },
+          {
+            "name": "@2FALogin"
+          },
+          {
+            "name": "@Profile"
+          }
+        ]
+      }
+    ],
+    "name": "2FA login flow",
+    "description": "",
+    "id": "2fa-login-flow",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Website/A_profileManagement/F_twoFAlogin.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-15T23:22:51.120Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5407965000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Check if all the sections on profile page are loaded and user can update personla info",
+        "description": "",
+        "id": "validate-user-profile-page-and-update-personal-details;check-if-all-the-sections-on-profile-page-are-loaded-and-user-can-update-personla-info;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 162253000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10638275000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches the InstaBee portal on browser",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1242078000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user lands on login page by clicking the login button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101708000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters email on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_email_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35981000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters password on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_password_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55750000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks submit login button on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9256566000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should land on home page successfully",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50025000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks the options menu",
+            "match": {
+              "location": "stepDefinitions.Website.logoutSteps.user_clicks_the_options_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5073836000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user opens the profile page",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.user_opens_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1314262000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "profile info section is present on profile page",
+            "match": {
+              "location": "stepDefinitions.Website.profilePageSteps.profile_info_section_is_present_on_profile_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13011000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "update password section is present on profile page",
+            "match": {
+              "location": "stepDefinitions.Website.profilePageSteps.update_password_section_is_present_on_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3035791000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "2FA section is present on profile page",
+            "match": {
+              "location": "stepDefinitions.Website.profilePageSteps.twofa_section_is_present_on_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15531000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "broswer sessions section is present on profile page",
+            "match": {
+              "location": "stepDefinitions.Website.profilePageSteps.broswer_sessions_section_is_present_on_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12855000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "delete account section is present on profile page",
+            "match": {
+              "location": "stepDefinitions.Website.profilePageSteps.delete_account_section_is_present_on_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6294375000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user updates profile information on profile info section",
+            "match": {
+              "location": "stepDefinitions.Website.profilePageSteps.user_updates_profile_information_on_profile_info_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32876000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks the options menu",
+            "match": {
+              "location": "stepDefinitions.Website.logoutSteps.user_clicks_the_options_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3073241000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user clicks logout link",
+            "match": {
+              "location": "stepDefinitions.Website.logoutSteps.user_clicks_logout_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3453331000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user lands on login page by clicking the login button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32631000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user enters the updated email on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_the_updated_email_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28607000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user enters password on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_password_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37612000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user clicks submit login button on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8201380000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user should land on home page successfully",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Portal"
+          },
+          {
+            "name": "@UserProfile"
+          },
+          {
+            "name": "@Profile"
+          }
+        ]
+      }
+    ],
+    "name": "Validate user profile page and update personal details",
+    "description": "",
+    "id": "validate-user-profile-page-and-update-personal-details",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Website/A_profileManagement/G_userProfile.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-15T23:23:48.700Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5353256000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Check if the user can change password successfully through forgot password flow",
+        "description": "",
+        "id": "forgot-password-flow;check-if-the-user-can-change-password-successfully-through-forgot-password-flow;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 176391000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10611600000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches the InstaBee portal on browser",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1253397000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user lands on login page by clicking the login button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42693000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks forgot password link",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.user_clicks_forgot_password_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1027549000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user lands on forgot password rest email sending page",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.user_lands_on_forgot_password_rest_email_sending_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134167000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters emails and hit submit",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.user_enters_emails_and_hit_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5671945000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "password reset email sent successfully",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.password_reset_email_sent_successfully()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11869947000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user lands on password reset page by following link in email",
+            "match": {
+              "location": "stepDefinitions.Website.mailinatorSteps.user_lands_on_password_reset_page_by_following_link_in_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3118413000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enters email, password and confirm password on password reset page",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.user_enters_email_password_and_confirm_password_on_password_reset_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51332000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks reset password button",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.user_clicks_reset_password_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2769719000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "player lands on login page and password reset successfully message is shown",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.player_lands_on_login_page_and_password_reset_successfully_message_is_shown()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37140000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters email on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_email_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45491000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enters new password on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_new_password_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44791000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user clicks submit login button on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9367064000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user should land on home page successfully",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Portal"
+          },
+          {
+            "name": "@ForgotPassword"
+          },
+          {
+            "name": "@Profile"
+          }
+        ]
+      }
+    ],
+    "name": "Forgot password flow",
+    "description": "",
+    "id": "forgot-password-flow",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Website/A_profileManagement/H_forgotPassword.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-15T23:24:40.284Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5347167000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Check if the user can change password from profile page and re-login with new password",
+        "description": "",
+        "id": "change-password-from-profile-page;check-if-the-user-can-change-password-from-profile-page-and-re-login-with-new-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 165057000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10670694000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches the InstaBee portal on browser",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1227405000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user lands on login page by clicking the login button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103503000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters email on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_email_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39496000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters new password on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_new_password_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62087000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks submit login button on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9231148000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should land on home page successfully",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49527000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks the options menu",
+            "match": {
+              "location": "stepDefinitions.Website.logoutSteps.user_clicks_the_options_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5078916000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user opens the profile page",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.user_opens_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2403090000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enters the current password on update password section",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.user_enters_the_current_password_on_update_password_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40950000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters the new password on update password section",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.user_enters_the_new_password_on_update_password_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32629000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters the confirm password on the update password section",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.user_enters_the_confirm_password_on_the_update_password_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41170000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user hits save button",
+            "match": {
+              "location": "stepDefinitions.Website.passwordResetSteps.user_hits_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32227000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user clicks the options menu",
+            "match": {
+              "location": "stepDefinitions.Website.logoutSteps.user_clicks_the_options_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3065372000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks logout link",
+            "match": {
+              "location": "stepDefinitions.Website.logoutSteps.user_clicks_logout_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3336299000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user lands on login page by clicking the login button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33361000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user enters email on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_email_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37840000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user enters password on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_password_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36960000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user clicks submit login button on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9458550000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user should land on home page successfully",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_should_land_on_home_page_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Portal"
+          },
+          {
+            "name": "@ChangePassword"
+          },
+          {
+            "name": "@Profile"
+          }
+        ]
+      }
+    ],
+    "name": "Change password from profile page",
+    "description": "",
+    "id": "change-password-from-profile-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Website/A_profileManagement/Z_changePassword.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-15T23:25:30.786Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5419864000,
               "status": "passed"
             },
             "match": {
@@ -221,7 +1801,7 @@
         "after": [
           {
             "result": {
-              "duration": 179365000,
+              "duration": 160509000,
               "status": "passed"
             },
             "match": {
@@ -234,7 +1814,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7100357000,
+              "duration": 10597745000,
               "status": "passed"
             },
             "line": 5,
@@ -246,7 +1826,7 @@
           },
           {
             "result": {
-              "duration": 746224000,
+              "duration": 1232696000,
               "status": "passed"
             },
             "line": 6,
@@ -258,7 +1838,7 @@
           },
           {
             "result": {
-              "duration": 137521000,
+              "duration": 102320000,
               "status": "passed"
             },
             "line": 7,
@@ -270,7 +1850,7 @@
           },
           {
             "result": {
-              "duration": 40474000,
+              "duration": 33734000,
               "status": "passed"
             },
             "line": 8,
@@ -282,7 +1862,7 @@
           },
           {
             "result": {
-              "duration": 85667000,
+              "duration": 60188000,
               "status": "passed"
             },
             "line": 9,
@@ -294,7 +1874,7 @@
           },
           {
             "result": {
-              "duration": 7762588000,
+              "duration": 9259495000,
               "status": "passed"
             },
             "line": 10,
@@ -306,7 +1886,7 @@
           },
           {
             "result": {
-              "duration": 5157915000,
+              "duration": 5133846000,
               "status": "passed"
             },
             "line": 11,
@@ -318,7 +1898,7 @@
           },
           {
             "result": {
-              "duration": 195174000,
+              "duration": 183767000,
               "status": "passed"
             },
             "line": 12,
@@ -330,7 +1910,7 @@
           },
           {
             "result": {
-              "duration": 3027573000,
+              "duration": 6068398000,
               "status": "passed"
             },
             "line": 13,
@@ -342,7 +1922,7 @@
           },
           {
             "result": {
-              "duration": 28337000,
+              "duration": 28318000,
               "status": "passed"
             },
             "line": 14,
@@ -377,11 +1957,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-10-08T20:07:33.724Z",
+        "start_timestamp": "2024-10-15T23:26:09.074Z",
         "before": [
           {
             "result": {
-              "duration": 2631896000,
+              "duration": 5276667000,
               "status": "passed"
             },
             "match": {
@@ -396,7 +1976,7 @@
         "after": [
           {
             "result": {
-              "duration": 170601000,
+              "duration": 173954000,
               "status": "passed"
             },
             "match": {
@@ -409,7 +1989,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7135166000,
+              "duration": 10646664000,
               "status": "passed"
             },
             "line": 5,
@@ -421,7 +2001,7 @@
           },
           {
             "result": {
-              "duration": 834465000,
+              "duration": 1042496000,
               "status": "passed"
             },
             "line": 6,
@@ -433,7 +2013,7 @@
           },
           {
             "result": {
-              "duration": 107656000,
+              "duration": 102111000,
               "status": "passed"
             },
             "line": 7,
@@ -445,7 +2025,7 @@
           },
           {
             "result": {
-              "duration": 38124000,
+              "duration": 36715000,
               "status": "passed"
             },
             "line": 8,
@@ -457,7 +2037,7 @@
           },
           {
             "result": {
-              "duration": 72450000,
+              "duration": 57704000,
               "status": "passed"
             },
             "line": 9,
@@ -469,7 +2049,7 @@
           },
           {
             "result": {
-              "duration": 5862624000,
+              "duration": 7871677000,
               "status": "passed"
             },
             "line": 10,
@@ -481,7 +2061,7 @@
           },
           {
             "result": {
-              "duration": 3103673000,
+              "duration": 3110673000,
               "status": "passed"
             },
             "line": 11,
@@ -493,7 +2073,7 @@
           },
           {
             "result": {
-              "duration": 4752776000,
+              "duration": 4568519000,
               "status": "passed"
             },
             "line": 12,
@@ -505,7 +2085,7 @@
           },
           {
             "result": {
-              "duration": 10767811000,
+              "duration": 10902654000,
               "status": "passed"
             },
             "line": 13,
@@ -534,6 +2114,145 @@
     "id": "update-company-settings-flow",
     "keyword": "Feature",
     "uri": "file:src/test/java/features/Website/B_companyManagement/B_companySettings.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-15T23:26:52.870Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5292210000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Check if the user can add the employees to the company with specific roles",
+        "description": "",
+        "id": "validate-the-company-employees-addition-flow;check-if-the-user-can-add-the-employees-to-the-company-with-specific-roles;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 164909000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "support.DeviceCreation.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10606699000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches the InstaBee portal on browser",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_launches_the_InstaBee_portal_on_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1197067000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user lands on login page by clicking the login button",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_lands_on_login_page_by_clicking_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99312000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters email on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_email_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34890000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters password on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_enters_password_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54694000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks submit login button on the login page",
+            "match": {
+              "location": "stepDefinitions.Website.loginSteps.user_clicks_submit_login_button_on_the_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6981590000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user lands on dashboard",
+            "match": {
+              "location": "stepDefinitions.Website.dashboardSteps.user_lands_on_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3090170000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user lands on company settings page",
+            "match": {
+              "location": "stepDefinitions.Website.dashboardSteps.user_lands_on_company_settings_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Portal"
+          },
+          {
+            "name": "@CompanyEmployeeAddition"
+          },
+          {
+            "name": "@Company"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the company employees addition flow",
+    "description": "",
+    "id": "validate-the-company-employees-addition-flow",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Website/B_companyManagement/C_addCompanyEmployee.feature",
     "tags": []
   }
 ]

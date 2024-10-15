@@ -19,6 +19,7 @@ public class companyPage {
         PageFactory.initElements(driver, this);
     }
 
+    public final String emailAddressEmployee = "auto" + WebDriverHelper.getRandomAlphanumericEmailString(5, "@yopmail.com").toLowerCase();
 
     @FindBy(xpath = "//input[contains(@id,'data.GSTIN')]")
     WebElement GSTINTextField;
@@ -122,12 +123,12 @@ public class companyPage {
         assertEquals(CompanyNameTest, companyNameOnSettings.getAttribute("value"));
         assertEquals(CompanyPhoneTest, companyPhone.getAttribute("value"));
         assertEquals(CompanyEmailTest, companyEmail.getAttribute("value"));
-        /*
-        assertTrue(businessCategoryService.isSelected());
+        assertTrue(businessCategoryService.getText().equals("Service"));
         Select businessTypeDropdownUpdateValidation = new Select(driver.findElement(By.xpath("//select[contains(@id,'data.business_type_id')]")));
         assertEquals("Furniture", businessTypeDropdownUpdateValidation.getFirstSelectedOption().getText());
         Select stateDropdownUpdateValidation = new Select(driver.findElement(By.xpath("//select[contains(@id,'data.state_id')]")));
         assertEquals(CompanyStateTest, stateDropdownUpdateValidation.getFirstSelectedOption().getText());
+       /*
         assertTrue(addressOnCompanySettings.getAttribute("value").contains("Hyderabad"));
          */
         assertEquals("100.00", creditBalanceOnSettings.getAttribute("value"));
