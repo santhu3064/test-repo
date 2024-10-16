@@ -43,11 +43,8 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-maven-
 
-    - name: Install dependencies
-      run: mvn install -DskipTests
-
     - name: Run Selenium Tests
-      run: mvn test -Dtest=testRunner
+      run: mvn clean test -Dtest=testRunner
       env:
         DISPLAY: ':99'
         JAVA_TOOL_OPTIONS: '-Dfile.enconding=UTF8'
