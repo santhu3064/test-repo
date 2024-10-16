@@ -40,7 +40,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-maven-
 
-    - name: Run Selenium Tests
+    - name: Build Test Jar
       run: mvn install -DskipTests
       env:
         DISPLAY: ':99'
