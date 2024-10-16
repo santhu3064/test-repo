@@ -45,12 +45,14 @@ jobs:
       env:
         DISPLAY: ':99'
         JAVA_TOOL_OPTIONS: '-Dfile.enconding=UTF8'
+        TERM: xterm-color
 
     - name: Run Selenium Tests
       run: mvn clean test -Dtest=testRunner
       env:
         DISPLAY: ':99'
         JAVA_TOOL_OPTIONS: '-Dfile.enconding=UTF8'
+        TERM: xterm-color
 
     - name: Archive Test Results
       if: always()  
