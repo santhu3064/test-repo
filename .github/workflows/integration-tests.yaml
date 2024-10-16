@@ -1,13 +1,11 @@
 name: Run Selenium Tests
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
+    types: [opened, reopened, synchronize]
     branches:
-      - main
-
+      - 'main'
+      - 'development'
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -26,22 +24,27 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up JDK
       uses: actions/setup-java@v4
       with:
         java-version: '21'
         distribution: 'temurin'
-        # cache: 'maven'  # Use the JDK version you need
 
     - name: Cache Maven packages
-      uses: actions/cache@v2
+      uses: actions/cache@v4
       with:
         path: ~/.m2/repository
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
         restore-keys: |
           ${{ runner.os }}-maven-
+
+    - name: Run Selenium Tests
+      run: mvn install -DskipTests
+      env:
+        DISPLAY: ':99'
+        JAVA_TOOL_OPTIONS: '-Dfile.enconding=UTF8'
 
     - name: Run Selenium Tests
       run: mvn clean test -Dtest=testRunner
@@ -53,30 +56,7 @@ jobs:
       if: always()  
       uses: actions/upload-artifact@v4
       with:
-        name: selenium-test-reports
+        name: test-reports
         path: |
           target/surefire-reports
           reporting/Cucumber.html
-
-    - name: Print Test Results to Console
-      run: |
-        ls -lrt 
-        ls -lrt target/surefire-reports
-        cat target/surefire-reports/*.txt || true
-
-    - name: Upload Test Report HTML (if exists)
-      run: |
-        if [ -f target/surefire-reports/index.html ]; then
-          echo "HTML report generated."
-          cat target/surefire-reports/index.html
-        else
-          echo "HTML report not found."
-        fi
-    - name: Upload reporting  HTML (if exists)
-      run: |
-        if [ -f reporting/Cucumber.html ]; then
-          echo "HTML report generated."
-          cat reporting/Cucumber.html
-        else
-          echo "HTML report not found."
-        fi
