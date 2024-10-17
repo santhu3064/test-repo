@@ -1,6 +1,6 @@
 Feature: Social media login flow
 
-  @Portal @SocialLogin @Profile
+  @SocialLogin @Profile
   Scenario Outline: Check if the user can login using the gmail email & password successfully
     Given user launches the InstaBee portal on browser
     And user lands on login page by clicking the login button

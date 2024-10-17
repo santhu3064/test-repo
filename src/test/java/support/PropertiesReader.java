@@ -57,6 +57,10 @@ public class PropertiesReader {
         CompanyGSTIN = data.getProperty("CompanyGSTIN");
         CompanyAddressTest = data.getProperty("CompanyAddressTest");
         CompanyStateTest = data.getProperty("CompanyStateTest");
+
+        // Override browser_headless with the system property if it exists
+        browser_headless = System.getProperty("browser.headless",
+                              settings.getProperty("browser.headless", "false"));
     }
 
 }

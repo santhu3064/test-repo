@@ -1,0 +1,52 @@
+name: Run Selenium Tests
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    branches:
+      - 'main'
+      - 'development'
+jobs:
+  test:
+    runs-on: windows-latest  # Run tests on Windows
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+
+    - name: Cache Maven packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+
+    - name: Build Test Jar
+      run: mvn install -DskipTests
+      env:
+        DISPLAY: ':99'
+        JAVA_TOOL_OPTIONS: '-Dfile.enconding=UTF8'
+        TERM: xterm-color
+
+    - name: Run Selenium Tests
+      run: mvn clean test -Dtest=testRunner
+      env:
+        DISPLAY: ':99'
+        JAVA_TOOL_OPTIONS: '-Dfile.enconding=UTF8'
+        TERM: xterm-color
+
+    - name: Archive Test Results
+      if: always()  
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-reports
+        path: |
+          target/surefire-reports
+          reporting/Cucumber.html
