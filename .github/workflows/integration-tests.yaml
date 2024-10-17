@@ -36,7 +36,7 @@ jobs:
         TERM: xterm-color
 
     - name: Run Selenium Tests
-      run: mvn clean test -Dtest=testRunner -Dbrowser.headless=true
+      run: mvn clean test -Dtest=testRunner
       env:
         DISPLAY: ':99'
         JAVA_TOOL_OPTIONS: '-Dfile.enconding=UTF8'
