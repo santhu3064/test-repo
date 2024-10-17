@@ -10,11 +10,6 @@ jobs:
   test:
     runs-on: windows-latest  # Run tests on Windows
 
-    services:
-      selenium:
-        image: seleniarm/standalone-chromium:latest
-        options: --shm-size=2g 
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
