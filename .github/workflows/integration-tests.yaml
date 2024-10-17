@@ -8,19 +8,12 @@ on:
       - 'development'
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest  # Run tests on Windows
 
     services:
-      chrome:
+      selenium:
         image: seleniarm/standalone-chromium:latest
-        ports:
-          - 4444:4444
-        options: >-
-          --shm-size=2g
-          --health-cmd "curl  http://localhost:4444/status || exit 1"
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
+        options: --shm-size=2g 
 
     steps:
     - name: Checkout code
